@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Medobo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.7; color: #1a1a2e; background: white; }
+        .container { max-width: 860px; margin: 0 auto; background: white; min-height: 100vh; }
+        .topbar { background: #1a1a2e; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+        .topbar .brand { color: white; font-size: 17px; font-weight: 600; text-decoration: none; }
+        .topbar nav a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 13px; margin-left: 18px; }
+        .topbar nav a:hover { color: white; }
+        .hero { background: #1a1a2e; padding: 40px 30px 35px; color: white; }
+        .hero .badge { display: inline-block; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.85); font-size: 12px; padding: 4px 14px; border-radius: 20px; margin-bottom: 14px; }
+        .hero h1 { font-size: 26px; font-weight: 700; margin-bottom: 6px; }
+        .hero p { font-size: 14px; opacity: 0.6; }
+        .content { padding: 40px 30px; }
+        h2 { color: #0f3460; font-size: 18px; font-weight: 600; margin-top: 36px; margin-bottom: 14px; padding-bottom: 6px; border-bottom: 2px solid #e8eef7; }
+        p { color: #444; font-size: 15px; margin-bottom: 14px; }
+        .contact-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin: 20px 0; }
+        .contact-card { border: 1px solid #e0e8f5; border-radius: 10px; padding: 22px; background: #f8faff; }
+        .contact-card .icon { font-size: 26px; margin-bottom: 10px; }
+        .contact-card h3 { color: #0f3460; font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+        .contact-card p { font-size: 14px; color: #555; margin-bottom: 6px; }
+        .contact-card a { color: #0f3460; text-decoration: none; font-weight: 500; font-size: 14px; }
+        .contact-card a:hover { text-decoration: underline; }
+        .warning { background: #fff8e1; border-left: 4px solid #f59e0b; padding: 14px 18px; border-radius: 0 6px 6px 0; margin: 20px 0; font-size: 14px; color: #333; }
+        .back { margin-top: 40px; padding-top: 20px; border-top: 1px solid #e8eef7; }
+        .back a { color: #0f3460; text-decoration: none; font-size: 14px; }
+        footer { background: #1a1a2e; color: rgba(255,255,255,0.6); text-align: center; padding: 24px 20px; font-size: 13px; margin-top: 40px; }
+        footer a { color: rgba(255,255,255,0.75); text-decoration: none; margin: 0 10px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="topbar">
+        <a href="index.html" class="brand">🏥 Medobo – Medical &amp; Clinical</a>
+        <nav>
+            <a href="privacy-policy.html">Privacy</a>
+            <a href="terms-and-conditions.html">Terms</a>
+            <a href="refund-policy.html">Refunds</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <div class="hero">
+        <div class="badge">Support</div>
+        <h1>✉️ Contact Us</h1>
+        <p>We're here to help. Reach us through the app or by email.</p>
+    </div>
+
+    <div class="content">
+        <h2>Get in Touch</h2>
+
+        <div class="contact-cards">
+            <div class="contact-card">
+                <div class="icon">📧</div>
+                <h3>Email</h3>
+                <p>For general inquiries, bug reports, and feature requests:</p>
+                <a href="mailto:medoboapp@gmail.com">medoboapp@gmail.com</a>
+            </div>
+            <div class="contact-card">
+                <div class="icon">📱</div>
+                <h3>In-App Feedback</h3>
+                <p>The fastest way to reach us is through the app itself:</p>
+                <p style="color: #0f3460; font-weight: 500;">Settings → Feedback</p>
+            </div>
+            <div class="contact-card">
+                <div class="icon">🐛</div>
+                <h3>Report an Issue</h3>
+                <p>Found a content error or bug? Use the Report Issue feature inside the app.</p>
+            </div>
+            <div class="contact-card">
+                <div class="icon">💳</div>
+                <h3>Subscription &amp; Payments</h3>
+                <p>For refund requests, contact Google Play Support directly:</p>
+                <a href="https://support.google.com/googleplay" target="_blank">support.google.com/googleplay</a>
+            </div>
+        </div>
+
+        <h2>Response Times</h2>
+        <p>We typically respond to all inquiries within <strong>48 hours</strong> on business days. For urgent payment issues, we recommend contacting Google Play Support directly as they handle all billing.</p>
+
+        <div class="warning">
+            <strong>Not for medical emergencies:</strong> If you have an urgent medical situation, please contact emergency services or a qualified healthcare provider immediately. Medobo is an educational tool and cannot provide medical advice.
+        </div>
+
+        <h2>Other Resources</h2>
+        <ul style="margin-left: 20px;">
+            <li><a href="privacy-policy.html" style="color: #0f3460;">Privacy Policy</a> — How we handle your data</li>
+            <li><a href="terms-and-conditions.html" style="color: #0f3460;">Terms &amp; Conditions</a> — Rules for using Medobo</li>
+            <li><a href="refund-policy.html" style="color: #0f3460;">Refund Policy</a> — Subscription and refund information</li>
+        </ul>
+
+        <div class="back"><a href="index.html">← Back to Home</a></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Medobo – Medical &amp; Clinical. All rights reserved.</p>
+        <div style="margin-top:8px;">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
+            <a href="refund-policy.html">Refund Policy</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
