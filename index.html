@@ -131,6 +131,27 @@
         .play-btn .pb-text { display: flex; flex-direction: column; line-height: 1.1; text-align: left; }
         .play-btn .pb-small { font-size: 11px; opacity: 0.7; font-weight: 500; }
         .play-btn .pb-large { font-size: 16px; font-weight: 700; }
+        
+        .web-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: transparent;
+            border: 2px solid rgba(255,255,255,0.4);
+            color: white;
+            padding: 10px 24px 10px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+        }
+        .web-btn:hover { transform: translateY(-2px); background: rgba(255,255,255,0.1); box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
+        .web-btn svg { width: 24px; height: 24px; }
+        .web-btn .pb-text { display: flex; flex-direction: column; line-height: 1.1; text-align: left; }
+        .web-btn .pb-small { font-size: 11px; opacity: 0.8; font-weight: 500; }
+        .web-btn .pb-large { font-size: 16px; font-weight: 700; }
+
         .hero-rating {
             display: inline-flex;
             align-items: center;
@@ -329,6 +350,12 @@
             font-size: 26px;
         }
         .final-cta p { color: rgba(255,255,255,0.75); margin-bottom: 24px; }
+        .final-cta-btns {
+            display: flex; 
+            gap: 14px; 
+            justify-content: center; 
+            flex-wrap: wrap;
+        }
 
         /* ---------- Footer ---------- */
         footer {
@@ -346,6 +373,15 @@
         }
         footer a:hover { color: white; }
         .footer-links { margin-top: 10px; }
+        .footer-links-divider {
+            margin-top: 12px; 
+            border-top: 1px solid rgba(255,255,255,0.1); 
+            padding-top: 12px;
+        }
+        .footer-links-divider span {
+            margin-right: 10px; 
+            opacity: 0.7;
+        }
 
         /* ---------- Responsive ---------- */
         @media (max-width: 720px) {
@@ -397,6 +433,13 @@
                         <span class="pb-text">
                             <span class="pb-small">GET IT ON</span>
                             <span class="pb-large">Google Play</span>
+                        </span>
+                    </a>
+                    <a href="https://medobo.app" target="_blank" rel="noopener" class="web-btn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                        <span class="pb-text">
+                            <span class="pb-small">VISIT</span>
+                            <span class="pb-large">medobo.app</span>
                         </span>
                     </a>
                     <span class="hero-rating">✦ Rated for 3+ · Free with in-app purchases</span>
@@ -452,26 +495,49 @@
             <div class="module"><div class="icon">📖</div><h3>Terminology Dictionary</h3><p>A searchable library of medical terms with word breakdowns, definitions, clinical context, variants, linked diseases, and associated drugs.</p></div>
         </div>
 
-    
-
         <div class="not-box"><strong>What Medobo is not:</strong> Medobo is not an exam preparation app. It does not offer MCQ banks, revision shortcuts, or exam hacks. It is a knowledge platform built for genuine understanding — the kind of depth that makes you a better clinician or a more informed patient.</div>
 
         <!-- Final CTA -->
         <div class="final-cta">
             <h2>Start exploring medicine today</h2>
             <p>Download Medobo on Google Play and dive into diseases, drugs, cases and more.</p>
-            <a href="https://play.google.com/store/apps/details?id=com.code.medobo" target="_blank" rel="noopener" class="play-btn">
-                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#00D4FF" d="M325.3 234.3L104.8 13l280.8 161.2-60.3 60.1z"/>
-                    <path fill="#FF3A44" d="M104.8 499l220.5-221.3 60.3 60.1L104.8 499z"/>
-                    <path fill="#FFD400" d="M385.6 337.8L325.3 277.6l60.3-60.1L464 257 385.6 337.8z"/>
-                    <path fill="#00F076" d="M104.8 13v486l220.5-221.3L104.8 13z"/>
-                </svg>
-                <span class="pb-text">
-                    <span class="pb-small">GET IT ON</span>
-                    <span class="pb-large">Google Play</span>
-                </span>
-            </a>
+            <div class="final-cta-btns">
+                <a href="https://play.google.com/store/apps/details?id=com.code.medobo" target="_blank" rel="noopener" class="play-btn">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#00D4FF" d="M325.3 234.3L104.8 13l280.8 161.2-60.3 60.1z"/>
+                        <path fill="#FF3A44" d="M104.8 499l220.5-221.3 60.3 60.1L104.8 499z"/>
+                        <path fill="#FFD400" d="M385.6 337.8L325.3 277.6l60.3-60.1L464 257 385.6 337.8z"/>
+                        <path fill="#00F076" d="M104.8 13v486l220.5-221.3L104.8 13z"/>
+                    </svg>
+                    <span class="pb-text">
+                        <span class="pb-small">GET IT ON</span>
+                        <span class="pb-large">Google Play</span>
+                    </span>
+                </a>
+                <a href="https://medobo.app" target="_blank" rel="noopener" class="web-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    <span class="pb-text">
+                        <span class="pb-small">VISIT</span>
+                        <span class="pb-large">medobo.app</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <h2>Explore Our Web Resources</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="icon">💊</div>
+                <h3>Pharma Vault Web</h3>
+                <p>Access comprehensive drug profiles, mechanisms, and pharmacology data online.</p>
+                <a href="https://medobo.app/pharma" target="_blank" rel="noopener">Visit Pharma</a>
+            </div>
+            <div class="card">
+                <div class="icon">🫀</div>
+                <h3>ECG Interpreter Web</h3>
+                <p>Learn, practice, and master ECG interpretation with our dedicated web tool.</p>
+                <a href="https://medobo.app/ecg" target="_blank" rel="noopener">Visit ECG</a>
+            </div>
         </div>
 
         <h2>Legal &amp; Policies</h2>
@@ -494,6 +560,12 @@
             <a href="refund-policy.html">Refund Policy</a>
             <a href="contact.html">Contact</a>
             <a href="https://play.google.com/store/apps/details?id=com.code.medobo" target="_blank" rel="noopener">Play Store</a>
+            <a href="https://medobo.app" target="_blank" rel="noopener">Website</a>
+        </div>
+        <div class="footer-links footer-links-divider">
+            <span>Web Tools:</span>
+            <a href="https://medobo.app/pharma" target="_blank" rel="noopener">Pharma</a>
+            <a href="https://medobo.app/ecg" target="_blank" rel="noopener">ECG</a>
         </div>
     </footer>
 </div>
